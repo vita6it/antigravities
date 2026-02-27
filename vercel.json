@@ -1,17 +1,13 @@
-<<<<<<< HEAD
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/home", "destination": "/index.html" }
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/home",
+      "destination": "/index.html"
+    }
   ]
 }
-=======
-{
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/home", "destination": "/index.html" }
-  ]
-}
->>>>>>> 63ad8d6fa89239cf4c603ad184e6b9eef8070509
