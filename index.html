@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>Antigravity - High Performance Blox Fruits Script</title>
+    <meta name="title" content="Antigravity - High Performance Blox Fruits Script">
+    <meta name="description"
+        content="The most powerful and secure automation script for Blox Fruits. Dominate the game with Antigravity.">
+    <meta name="keywords" content="blox fruits, roblox script, auto farm, antigravity, automation, roblox">
+    <meta name="author" content="Antigravity Team">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://antigravity.pro/">
+    <meta property="og:title" content="Antigravity - High Performance Blox Fruits Script">
+    <meta property="og:description"
+        content="The most powerful and secure automation script for Blox Fruits. Dominate the game with Antigravity.">
+    <meta property="og:image" content="https://antigravity.pro/assets/antigravity.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://antigravity.pro/">
+    <meta property="twitter:title" content="Antigravity - High Performance Blox Fruits Script">
+    <meta property="twitter:description"
+        content="The most powerful and secure automation script for Blox Fruits. Dominate the game with Antigravity.">
+    <meta property="twitter:image" content="https://antigravity.pro/assets/antigravity.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/antigravity.png">
+    <link rel="apple-touch-icon" href="assets/antigravity.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="msapplication-TileColor" content="#0a0a0a">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Toast Notification -->
+    <div class="toast-container">
+        <div class="toast" id="copyToast">
+            <div class="toast-icon">
+                <i data-lucide="circle-check"></i>
+            </div>
+            <span>Copy Success!</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">
+            <div class="logo-icon">
+                <img src="assets/antigravity.png" alt="Antigravity Logo"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            Antigravity
+        </a>
+        <a href="https://discord.gg/JXgCz6uC2U" target="_blank" class="download-btn">
+            <span>Discord</span>
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Gradient Blobs -->
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-logo">
+            <div class="hero-logo-icon">
+                <img src="assets/antigravity.png" alt="Antigravity Logo"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="hero-logo-text">Antigravity</div>
+        </div>
+
+        <h1>
+            Just an Automatic Script<br>
+            <strong>For Blox Fruits</strong>
+        </h1>
+
+        <div class="cta-buttons">
+            <a href="#code-section" class="btn-primary">
+                <span>Get Script</span>
+            </a>
+            <a href="#" class="btn-secondary">
+                Explore
+            </a>
+        </div>
+
+        <!-- UI Preview Image -->
+        <div class="hero-preview">
+            <img src="assets/3796d4ac-8f67-4691-b598-03ce9ba734a4.jpg" alt="Antigravity UI Preview"
+                class="hero-preview-img">
+        </div>
+    </section>
+
+    <!-- Code Section -->
+    <section class="code-section" id="code-section">
+        <div class="code-container">
+            <h2>Loader Script</h2>
+            <p>Copy and paste this code in your executor to get started with our powerful automation script</p>
+
+            <div class="code-block">
+                <div class="code-content">
+                    <span class="function">loadstring</span>(game:<span class="function">HttpGet</span>(<span
+                        class="string">"https://github.com/vita6it/Antigravity/releases/latest/download/main.lua"</span>))()
+                </div>
+            </div>
+
+            <button class="copy-btn" onclick="copyCode(this)">
+                <i data-lucide="clipboard-copy"></i>
+                <span>Copy Script</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section class="tabs-section" id="explore">
+        <div class="container">
+            <div class="tabs-header">
+                <button class="tab-button active" data-tab="features">Features</button>
+                <button class="tab-button" data-tab="pricing">Pricing</button>
+                <button class="tab-button" data-tab="community">Community</button>
+            </div>
+
+            <div class="tabs-content">
+                <!-- Features Tab -->
+                <div class="tab-panel active" id="features">
+                    <h2>Why Choose Antigravity?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i data-lucide="zap" class="feature-icon" style="color: var(--primary-blue)"></i>
+                            <h3>Instantly</h3>
+                            <p>Optimized execution speeds ensuring you get the fastest farming rates possible.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i data-lucide="shield" class="feature-icon" style="color: var(--primary-blue)"></i>
+                            <h3>100% Undetected</h3>
+                            <p>Advanced bypasses keeping your account completely safe from ban waves.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i data-lucide="swords" class="feature-icon" style="color: var(--primary-blue)"></i>
+                            <h3>Automatics</h3>
+                            <p>Fully automatic leveling, boss rushing, fruit finding, and mastery grinds.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i data-lucide="settings" class="feature-icon" style="color: var(--primary-blue)"></i>
+                            <h3>Customizable</h3>
+                            <p>Adjust everything from attack speeds, target priorities, to tweening delays.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing Tab -->
+                <div class="tab-panel" id="pricing">
+                    <h2>Pricing Plans</h2>
+                    <div class="pricing-grid">
+                        <div class="pricing-card featured">
+                            <span class="badge">Most Popular</span>
+                            <h3>Premium</h3>
+                            <div class="price">$0<span>/forever</span></div>
+                            <ul class="pricing-features">
+                                <li><i data-lucide="check" style="width: 16px; margin-right: 8px;"></i>All Features
+                                </li>
+                                <li><i data-lucide="check" style="width: 16px; margin-right: 8px;"></i>Fast & Stability
+                                </li>
+                                <li><i data-lucide="check" style="width: 16px; margin-right: 8px;"></i>Fully Automatics
+                                </li>
+                                <li><i data-lucide="check" style="width: 16px; margin-right: 8px;"></i>No Lag</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Tab -->
+                <div class="tab-panel" id="community">
+                    <h2>Join thousands of players</h2>
+                    <div class="community-grid">
+                        <div class="community-card">
+                            <i data-lucide="message-square" class="community-icon"
+                                style="color: var(--primary-blue)"></i>
+                            <h3>Discord Server</h3>
+                            <p>Join our massive community, get support, and share your scripts and configs.</p>
+                            <a href="https://discord.gg/JXgCz6uC2U" class="community-link" target="_blank">Join
+                                Discord</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+        style="text-align: center; padding: 4rem 1rem; border-top: 1px solid rgba(255,255,255,0.05); color: var(--text-gray); font-size: 0.9rem; margin-top: 2rem;">
+        <div style="margin-bottom: 1rem; display: flex; justify-content: center; gap: 1rem;">
+            <a href="#" style="color: var(--text-gray);"><i data-lucide="twitter"></i></a>
+            <a href="#" style="color: var(--text-gray);"><i data-lucide="youtube"></i></a>
+            <a href="https://discord.gg/JXgCz6uC2U" style="color: var(--text-gray);"><i data-lucide="disc"></i></a>
+        </div>
+        <p>&copy; 2026 Antigravity Script. All rights reserved.</p>
+        <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">This tool is for educational purposes only. Not
+            affiliated with Roblox.</p>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
