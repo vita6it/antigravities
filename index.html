@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="th">
 
@@ -223,4 +224,1140 @@
     <script src="script.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>Antigravity - High Performance Blox Fruits Script</title>
+    <meta name="title" content="Antigravity - High Performance Blox Fruits Script">
+    <meta name="description"
+        content="The most powerful and secure automation script for Blox Fruits. Dominate the game with Antigravity.">
+    <meta name="keywords" content="blox fruits, roblox script, auto farm, antigravity, automation, roblox">
+    <meta name="author" content="Antigravity Team">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://antigravity.pro/">
+    <meta property="og:title" content="Antigravity - High Performance Blox Fruits Script">
+    <meta property="og:description"
+        content="The most powerful and secure automation script for Blox Fruits. Dominate the game with Antigravity.">
+    <meta property="og:image" content="https://antigravity.pro/assets/antigravity.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://antigravity.pro/">
+    <meta property="twitter:title" content="Antigravity - High Performance Blox Fruits Script">
+    <meta property="twitter:description"
+        content="The most powerful and secure automation script for Blox Fruits. Dominate the game with Antigravity.">
+    <meta property="twitter:image" content="https://antigravity.pro/assets/antigravity.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/antigravity.png">
+    <link rel="apple-touch-icon" href="assets/antigravity.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="msapplication-TileColor" content="#0a0a0a">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #3a8cfe;
+            --primary-blue-light: #5da3ff;
+            --primary-blue-dark: #2a6cd4;
+            --primary-pink: #3a8cfe;
+            --primary-pink-light: rgba(58, 140, 254, 0.8);
+            --primary-pink-dark: #2a6cd4;
+            --bg-dark: #0a0a0a;
+            --bg-dark-secondary: #1a1a1a;
+            --text-light: #ffffff;
+            --text-gray: #b0b0b0;
+            --accent-glow: rgba(58, 140, 254, 0.3);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: var(--text-light);
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 4rem;
+            background: rgba(26, 26, 26, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            animation: slideDown 0.6s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-light);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--bg-dark);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-light);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-pink);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown::after {
+            content: '▼';
+            font-size: 0.7rem;
+            margin-left: 0.4rem;
+        }
+
+        .download-btn {
+            background: var(--primary-blue);
+            color: #ffffff;
+            padding: 0.75rem 1.75rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-blue-light);
+        }
+
+
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 8rem 2rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 3rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.2s forwards;
+        }
+
+        .hero-logo-icon {
+            width: 60px;
+            height: 60px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--bg-dark);
+            font-weight: bold;
+            font-size: 32px;
+            margin-bottom: 1rem;
+        }
+
+        .hero-logo-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+
+        h1 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 300;
+            line-height: 1.2;
+            margin-bottom: 3rem;
+            max-width: 1100px;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.4s forwards;
+            color: var(--text-light);
+        }
+
+        h1 strong {
+            font-weight: 800;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.6s forwards;
+        }
+
+        .btn-primary {
+            background: var(--primary-blue);
+            color: #ffffff;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            background: var(--primary-blue-light);
+        }
+
+        .btn-secondary {
+            color: var(--text-light);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary-pink);
+        }
+
+        /* Code Section */
+        .code-section {
+            padding: 3rem 2rem 4rem;
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(58, 140, 254, 0.05) 50%, var(--bg-dark) 100%);
+        }
+
+        .code-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(rgba(58, 140, 254, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(58, 140, 254, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+            mask-image: linear-gradient(to bottom, transparent, black 150px);
+            -webkit-mask-image: linear-gradient(to bottom, transparent, black 150px);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .code-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .code-container h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            color: var(--primary-blue);
+        }
+
+        .code-container p {
+            font-size: 1rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .code-block {
+            background: rgba(58, 140, 254, 0.08);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(58, 140, 254, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            text-align: left;
+            overflow: hidden;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+
+        .copy-icon {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            color: var(--primary-blue);
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            padding: 0.5rem;
+            border-radius: 6px;
+        }
+
+        .copy-icon:hover {
+            color: var(--primary-blue-light);
+            background: rgba(58, 140, 254, 0.1);
+        }
+
+        .code-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(58, 140, 254, 0.2);
+        }
+
+        .code-title {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .copy-btn {
+            background: var(--primary-blue);
+            color: #ffffff;
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        .copy-btn:hover {
+            background: var(--primary-blue-light);
+            transform: translateY(-3px);
+        }
+
+        .copy-btn.copied {
+            background: #4caf50;
+        }
+
+        .code-content {
+            color: #f8f8f2;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .code-content::-webkit-scrollbar {
+            display: none;
+        }
+
+        .code-content .keyword {
+            color: var(--primary-blue-light);
+            font-weight: bold;
+        }
+
+        .code-content .string {
+            color: #7dd3fc;
+        }
+
+        .code-content .function {
+            color: var(--primary-blue);
+        }
+
+        .code-content .comment {
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        /* Tabs Section */
+        .tabs-section {
+            min-height: 100vh;
+            padding: 8rem 2rem 4rem;
+            background: var(--bg-dark-secondary);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tabs-header {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .tab-button {
+            background: none;
+            border: none;
+            color: var(--text-gray);
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-bottom: 2px solid transparent;
+            white-space: nowrap;
+        }
+
+        .tab-button:hover {
+            color: var(--text-light);
+        }
+
+        .tab-button.active {
+            color: var(--text-light);
+            border-bottom-color: var(--primary-pink);
+        }
+
+        .tabs-content {
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        .tab-panel h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        /* Pricing Grid */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .pricing-card.featured {
+            background: rgba(58, 140, 254, 0.1);
+            border-color: var(--primary-blue);
+        }
+
+        .badge {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: var(--primary-blue);
+            color: #ffffff;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        .price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-gray);
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            color: var(--text-gray);
+        }
+
+        .pricing-button {
+            width: 100%;
+            background: var(--primary-blue);
+            color: #ffffff;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .pricing-button:hover {
+            transform: translateY(-2px);
+            background: var(--primary-blue-light);
+        }
+
+        /* Docs Grid */
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .doc-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+        }
+
+        .doc-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .doc-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .doc-card p {
+            color: var(--text-gray);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .doc-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .doc-link:hover {
+            opacity: 0.7;
+        }
+
+        /* Community Grid */
+        .community-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .community-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .community-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+        }
+
+        .community-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .community-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .community-card p {
+            color: var(--text-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .community-link {
+            display: inline-block;
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .community-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .tabs-section {
+                padding: 6rem 1.5rem 3rem;
+            }
+
+            .features-grid,
+            .pricing-grid,
+            .docs-grid,
+            .community-grid {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .code-block {
+                max-width: 100%;
+                padding: 1.2rem;
+            }
+
+            .copy-icon {
+                top: 0.8rem;
+                right: 0.8rem;
+                font-size: 1.1rem;
+                padding: 0.4rem;
+            }
+
+            .code-content {
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 1.5rem;
+            }
+
+            .hero {
+                padding: 6rem 1.5rem 3rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .code-block {
+                max-width: 100%;
+                padding: 1rem;
+            }
+
+            .copy-icon {
+                top: 0.5rem;
+                right: 0.5rem;
+                font-size: 1rem;
+                padding: 0.4rem;
+            }
+
+            .code-content {
+                font-size: 0.8rem;
+            }
+
+            .tabs-section {
+                padding: 5rem 1rem 2rem;
+            }
+
+            .tabs-header {
+                gap: 0.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .tab-button {
+                padding: 0.75rem 1rem;
+                font-size: 0.875rem;
+            }
+
+            .tab-panel h2 {
+                font-size: 1.75rem;
+                margin-bottom: 2rem;
+            }
+
+            .features-grid,
+            .docs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-grid,
+            .community-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+            }
+
+            .feature-card,
+            .pricing-card,
+            .doc-card,
+            .community-card {
+                padding: 1.5rem;
+            }
+
+            .price {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 1rem 1rem;
+            }
+
+            .logo {
+                font-size: 1rem;
+            }
+
+            .logo-icon {
+                width: 28px;
+                height: 28px;
+                font-size: 16px;
+            }
+
+            .download-btn {
+                padding: 0.6rem 1.25rem;
+                font-size: 0.8rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero-logo-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 28px;
+            }
+
+            .hero-logo-text {
+                font-size: 1.25rem;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                padding: 0.875rem 2rem;
+                font-size: 0.9rem;
+            }
+
+            .code-block {
+                padding: 0.8rem;
+            }
+
+            .copy-icon {
+                top: 0.4rem;
+                right: 0.4rem;
+                font-size: 0.9rem;
+                padding: 0.3rem;
+            }
+
+            .code-content {
+                font-size: 0.75rem;
+            }
+
+            .tabs-header {
+                gap: 0.25rem;
+            }
+
+            .tab-button {
+                padding: 0.625rem 0.75rem;
+                font-size: 0.8rem;
+            }
+
+            .tab-panel h2 {
+                font-size: 1.5rem;
+            }
+
+            .start-btn {
+                bottom: 1rem;
+                left: 1rem;
+                padding: 0.4rem 0.8rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Start Button */
+        .start-btn {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            background: var(--bg-dark-secondary);
+            color: var(--text-light);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 100;
+        }
+
+        .start-btn:hover {
+            border-color: var(--primary-pink);
+        }
+
+        /* Additional Visual Elements */
+        .gradient-blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.08;
+            animation: blobMove 20s infinite;
+        }
+
+        .blob-1 {
+            background: rgba(58, 140, 254, 0.2);
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .blob-2 {
+            background: rgba(58, 140, 254, 0.15);
+            top: 50%;
+            right: 10%;
+            animation-delay: 5s;
+        }
+
+        .blob-3 {
+            background: rgba(93, 163, 255, 0.2);
+            bottom: 10%;
+            left: 50%;
+            animation-delay: 10s;
+        }
+
+        @keyframes blobMove {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            33% {
+                transform: translate(50px, -50px) scale(1.1);
+            }
+
+            66% {
+                transform: translate(-50px, 50px) scale(0.9);
+            }
+        }
+
+        /* Toast Notification */
+        .toast-container {
+            position: fixed;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+            pointer-events: none;
+        }
+
+        .toast {
+            background: #ffffff;
+            color: #1a1a1a;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            opacity: 0;
+            transform: translateY(-20px) scale(0.9);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .toast-icon {
+            width: 24px;
+            height: 24px;
+            background: #4caf50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+        }
+
+        .toast-icon i {
+            width: 14px;
+            height: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Toast Notification -->
+    <div class="toast-container">
+        <div class="toast" id="copyToast">
+            <div class="toast-icon">
+                <i data-lucide="circle-check"></i>
+            </div>
+            <span>Copy Success!</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">
+            <div class="logo-icon">
+                <img src="assets/antigravity.png" alt="Antigravity Logo"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            Antigravity
+        </a>
+        <a href="https://discord.gg/JXgCz6uC2U" target="_blank" class="download-btn">
+            <span>Discord</span>
+        </a>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Gradient Blobs -->
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-logo">
+            <div class="hero-logo-icon">
+                <img src="assets/antigravity.png" alt="Antigravity Logo"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="hero-logo-text">Antigravity</div>
+        </div>
+
+        <h1>
+            Just an Automatic Script<br>
+            <strong>For Blox Fruits</strong>
+        </h1>
+
+        <div class="cta-buttons">
+            <a href="#code-section" class="btn-primary">
+                <span>Get Script</span>
+            </a>
+            <a href="#" class="btn-secondary">
+                Explore
+            </a>
+        </div>
+    </section>
+
+    <!-- Code Section -->
+    <section class="code-section" id="code-section">
+        <div class="code-container">
+            <h2>Loader Script</h2>
+            <p>Copy and paste this code in your executor to get started with our powerful automation script</p>
+
+            <div class="code-block">
+                <div class="code-content">
+                    <span class="function">loadstring</span>(game:<span class="function">HttpGet</span>(<span
+                        class="string">"https://github.com/vita6it/Antigravity/releases/latest/download/main.lua"</span>))()
+                </div>
+            </div>
+
+            <button class="copy-btn" onclick="copyCode(this)">
+                <i data-lucide="clipboard-copy"></i>
+                <span>Copy Script</span>
+            </button>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+
+>>>>>>> 63ad8d6fa89239cf4c603ad184e6b9eef8070509
 </html>
